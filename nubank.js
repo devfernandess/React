@@ -5,7 +5,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.container1}>
-        <View style={styles.perfil}><MaterialIcons name="person" size={35} color="white"  /></View>
+        <View style={styles.perfil}><MaterialIcons name="person" size={30} color="white"  /></View>
         <View style={styles.is}>
         <View style={styles.i}> <MaterialIcons name="visibility" size={20} color="white"  /></View>
         <View style={styles.i}><MaterialIcons name="help" size={20} color="white"  /></View>
@@ -76,6 +76,17 @@ export default function App() {
       
       </View>
 
+       <View style={styles.flutuante}>
+        <View style={styles.f1}>
+          <MaterialIcons name="decimal-
+          increase" size={20} color="white"/>
+        </View>
+        <View style={styles.f2}></View>
+        <MaterialIcons name="person" size={30} color="white"  />
+        <View style={styles.f3}></View>
+        <MaterialIcons name="person" size={30} color="white"  />
+       </View>
+
     </SafeAreaView>
   );
 }
@@ -102,6 +113,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#8d25d1',
     top: 0,
     padding:20,
+    paddingTop:30,
   },
 
   container2: {
@@ -240,8 +252,8 @@ const styles = StyleSheet.create({
   perfil:{
     marginTop:10,
     backgroundColor:"rgba(255,255,255,0.5)",
-    height:50,
-    width:50,
+    height:45,
+    width:45,
     borderRadius:30,
     opacity:1,
     alignItems:'center',
@@ -269,9 +281,30 @@ const styles = StyleSheet.create({
     opacity:1,
     justifyContent:'center',
     alignItems:'center',
-  }
+  },
+
+  flutuante:{
+    width:180,
+    height:60,
+    backgroundColor:'rgba(0,0,15,0.2)',
+    flexDirection:'row',
+    alignSelf:'center',
+    borderRadius:30,
+    position:'fixed',
+    marginTop:20,
+    justifyContent:'space-between',
+    paddingLeft:25,
+    paddingRight:25,
+    alignItems:'center',
+    
 
 
+  },
+
+
+
+
+});
 
 
 });
